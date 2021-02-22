@@ -1,4 +1,4 @@
 FROM openjdk:8
-COPY ./target/devops_calculator-1.0-SNAPSHOT.jar ./
+COPY ./target/calc-devops_minipro-1.0-SNAPSHOT.jar ./
 WORKDIR ./
-CMD ["java","-cp","devops_calculator-1.0-SNAPSHOT.jar","Main"]
+CMD ["java","-cp","calc-devops_minipro-1.0-SNAPSHOT.jar","Main"]
