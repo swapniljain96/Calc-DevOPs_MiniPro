@@ -1,0 +1,8 @@
+---
+- name: Pull docker image of Calc
+  hosts: all
+  tasks:
+    - name: Pull Calc DevOps Image
+      docker_image:
+        name: swapniljain96/testproject
+        source: pull
