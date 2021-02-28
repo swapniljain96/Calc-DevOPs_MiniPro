@@ -1,5 +1,1 @@
 localhost ansible_user=swapnil
-
-[virtual]
-172.17.0.2 ansible_ssh_user=yonex ansible_ssh_pass=yonex
-172.17.0.3 ansible_ssh_user=asics ansible_ssh_pass=asics
