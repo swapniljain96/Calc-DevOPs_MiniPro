@@ -1,8 +1,8 @@
+
 ---
-- name: Pull docker image of Calc
-  hosts: all
+- name: Copy jar file to remoter server
+  hosts: server
   tasks:
-    - name: Pull Calc DevOps Image
-      docker_image:
-        name: swapniljain96/testproject
-        source: pull
+    - copy:
+        src: ./calc-devops_minipro-1.0-SNAPSHOT.jar
+        dest: ~/
