@@ -1,1 +1,3 @@
 localhost ansible_user=swapnil
+
+172.16.128.206 ansible_user=shivam
