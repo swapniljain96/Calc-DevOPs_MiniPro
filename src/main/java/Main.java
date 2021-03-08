@@ -1,7 +1,15 @@
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import sun.rmi.runtime.Log;
+
 import java.util.Scanner;
 
 public class Main {
+
+    private static final Logger Logger = LogManager.getLogger(Main.class);
+
     public static double squareroot(double number1) {
+        Logger.info("Performing SQUARE ROOT of " + number1 + " result: " + Math.sqrt(number1));
         return Math.sqrt(number1);
     }
 
@@ -24,7 +32,7 @@ public class Main {
 
     public static void main(String args[]) {
         int flag = 0, ch;
-        double num1, num2;
+        double var1, var2;
         Scanner reader = new Scanner(System.in);
         System.out.println("Calculator System");
         do {
@@ -44,33 +52,29 @@ public class Main {
                     case 1:
                         System.out.println("Square root");
                         System.out.println("Enter number");
-                        num1 = reader.nextDouble();
-                        System.out.println(Math.sqrt(num1));
+                        var1 = reader.nextDouble();
+                        System.out.println("Squre root of "+var1+" is : "+squareroot(var1));
                         break;
                     case 2:
                         System.out.println("Factorial");
                         System.out.println("Enter number");
-                        num1 = reader.nextDouble();
-                        int i, fact = 1;
-                        for (i = 1; i <= num1; i++) {
-                            fact = fact * i;
-                        }
-                        System.out.println("Factorial of " + num1 + " is: " + fact);
+                        var1 = reader.nextDouble();
+                        System.out.println("Factorial of " + var1 + " is: " + factorials(var1));
                         break;
                     case 3:
                         System.out.println("Natural Logarithim");
                         System.out.println("Enter number");
-                        num1 = reader.nextDouble();
-                        System.out.println(Math.log(num1));
+                        var1 = reader.nextDouble();
+                        System.out.println("Natural Logarithm of "+var1+" is: "+naturallog(var1));
                         break;
                     case 4:
                         System.out.println("Power function");
                         System.out.println("Enter two numbers");
                         System.out.print("Enter number 1: ");
-                        num1 = reader.nextDouble();
+                        var1 = reader.nextDouble();
                         System.out.print("Enter number 2: ");
-                        num2 = reader.nextDouble();
-                        System.out.println(Math.pow(num1, num2));
+                        var2 = reader.nextDouble();
+                        System.out.println(var1+"^"+var2+" is : "+powerfun(var1,var2));
                         break;
                     default:
                         System.out.println("Exiting program due to invalid input");
