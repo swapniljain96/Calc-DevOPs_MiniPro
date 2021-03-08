@@ -1,64 +1,84 @@
-import java.util.*;
-import static java.lang.System.exit;
+import java.util.Scanner;
 
-public class Main
-{
-    public static void main(String[] args)
-    {
-        int ch;
-        double var1,var2;
-        Scanner reader = new Scanner(System.in);
-        System.out.println("~~~~~~~!! Calculator System !!~~~~~~");
-        while(true)
-        {
-            System.out.println("1. Square Root");
-            System.out.println("2. Factorial");
-            System.out.println("3. Natural Logarithm");
-            System.out.println("4. Power(Exponential)");
-            System.out.println("5. Exit");
-            System.out.print("Enter your choice: ");
-            ch = reader.nextInt();
-            switch(ch)
-            {
-                case 1:
-                    System.out.println("-----Square Root-----");
-                    System.out.print("Enter the number : ");
-                    var1 = reader.nextDouble();
-                    System.out.println("Squre root of "+var1+" is : "+Math.sqrt(var1));
-                    break;
-                case 2:
-                    System.out.println("-----Factorial-----");
-                    System.out.print("Enter the number : ");
-                    var1 = reader.nextDouble();
-                    double var;
-                    var = fact(var1);
-                    System.out.println("Factorial of "+var1+" is: "+var);
-                    break;
-                case 3:
-                    System.out.println("-----Natural Logarithm-----");
-                    System.out.print("Enter the number: ");
-                    var1 = reader.nextDouble();
-                    System.out.println("Natural Logarithm of "+var1+" is: "+Math.log(var1));
-                    break;
-                case 4:
-                    System.out.println("-----Power(Exponential)-----");
-                    System.out.print("Enter the base number : ");
-                    var1 = reader.nextDouble();
-                    System.out.print("Enter power to the number : ");
-                    var2 = reader.nextDouble();
-                    System.out.println(var1+"^"+var2+" is : "+Math.pow(var1,var2));
-                    break;
-                case 5: exit(0);
-                default: System.out.println("Invalid Input !!!!!");
-            }
-            System.out.println("\n");
-        }
+public class Main {
+    public static double squareroot(double number1) {
+        return Math.sqrt(number1);
     }
 
-    private static double fact(double num) {
-        double facto = 1;
-        for(int i = 1; i <= num; ++i)
-        { facto *= i;   }
-        return  facto;
+    public static double factorials(double number1) {
+        int i, fact = 1;
+        for (i = 1; i <= number1; i++) {
+            fact = fact * i;
+        }
+        return fact;
+    }
+
+
+    public static double naturallog(double number1) {
+        return Math.log(number1);
+    }
+
+    public static double powerfun(double number1, double number2) {
+        return Math.pow(number1, number2);
+    }
+
+    public static void main(String args[]) {
+        int flag = 0, ch;
+        double num1, num2;
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Calculator System");
+        do {
+            System.out.println("Option Menu");
+            System.out.println("");
+            System.out.println("1) Square Root");
+            System.out.println("2) Factorial");
+            System.out.println("3) Natural Logarithim");
+            System.out.println("4) Power Function");
+            System.out.println("5) Exit");
+            System.out.print("Enter your choice: ");
+            ch = reader.nextInt();
+            if (ch == 5) {
+                flag = 1;
+            } else {
+                switch (ch) {
+                    case 1:
+                        System.out.println("Square root");
+                        System.out.println("Enter number");
+                        num1 = reader.nextDouble();
+                        System.out.println(Math.sqrt(num1));
+                        break;
+                    case 2:
+                        System.out.println("Factorial");
+                        System.out.println("Enter number");
+                        num1 = reader.nextDouble();
+                        int i, fact = 1;
+                        for (i = 1; i <= num1; i++) {
+                            fact = fact * i;
+                        }
+                        System.out.println("Factorial of " + num1 + " is: " + fact);
+                        break;
+                    case 3:
+                        System.out.println("Natural Logarithim");
+                        System.out.println("Enter number");
+                        num1 = reader.nextDouble();
+                        System.out.println(Math.log(num1));
+                        break;
+                    case 4:
+                        System.out.println("Power function");
+                        System.out.println("Enter two numbers");
+                        System.out.print("Enter number 1: ");
+                        num1 = reader.nextDouble();
+                        System.out.print("Enter number 2: ");
+                        num2 = reader.nextDouble();
+                        System.out.println(Math.pow(num1, num2));
+                        break;
+                    default:
+                        System.out.println("Exiting program due to invalid input");
+                        flag = 1;
+                }
+            }
+            System.out.println("\n");
+        } while (flag == 0);
+
     }
 }
