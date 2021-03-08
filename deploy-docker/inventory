@@ -1,2 +1,1 @@
-[server]
-172.16.128.206 ansible_user=shivam
+localhost ansible_user=swapnil
