@@ -4,6 +4,8 @@ import sun.rmi.runtime.Log;
 
 import java.util.Scanner;
 
+import static java.lang.System.exit;
+
 public class Main {
 
     private static final Logger Logger = LogManager.getLogger(Main.class);
@@ -21,7 +23,6 @@ public class Main {
         return fact;
     }
 
-
     public static double naturallog(double number1) {
         return Math.log(number1);
     }
@@ -31,25 +32,21 @@ public class Main {
     }
 
     public static void main(String args[]) {
-        int flag = 0, ch;
+        int ch;
         double var1, var2;
         Scanner reader = new Scanner(System.in);
-        System.out.println("Calculator System");
-        do {
-            System.out.println("Option Menu");
-            System.out.println("");
-            System.out.println("1) Square Root");
-            System.out.println("2) Factorial");
-            System.out.println("3) Natural Logarithim");
-            System.out.println("4) Power Function");
-            System.out.println("5) Exit");
+        System.out.println("~~~~~~~!! Calculator System !!~~~~~~");
+        while(true)
+        {
+            System.out.println("1. Square Root");
+            System.out.println("2. Factorial");
+            System.out.println("3. Natural Logarithm");
+            System.out.println("4. Power(Exponential)");
+            System.out.println("5. Exit");
             System.out.print("Enter your choice: ");
             ch = reader.nextInt();
-            if (ch == 5) {
-                flag = 1;
-            } else {
-                switch (ch) {
-                    case 1:
+            switch(ch)
+            {       case 1:
                         System.out.println("Square root");
                         System.out.println("Enter number");
                         var1 = reader.nextDouble();
@@ -76,13 +73,10 @@ public class Main {
                         var2 = reader.nextDouble();
                         System.out.println(var1+"^"+var2+" is : "+powerfun(var1,var2));
                         break;
-                    default:
-                        System.out.println("Exiting program due to invalid input");
-                        flag = 1;
+                    case 5: exit(0);
+                    default: System.out.println("Invalid Input !!!!!");
                 }
-            }
             System.out.println("\n");
-        } while (flag == 0);
-
+            }
     }
 }
