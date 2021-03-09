@@ -1,6 +1,5 @@
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import sun.rmi.runtime.Log;
 
 import java.util.Scanner;
 
@@ -11,7 +10,7 @@ public class Main {
     private static final Logger Logger = LogManager.getLogger(Main.class);
 
     public static double squareroot(double number1) {
-        Logger.info("Performing SQUARE ROOT of " + number1 + " result: " + Math.sqrt(number1));
+        Logger.info("SQUARE_ROOT - Input:" + number1 + " - Output:" + Math.sqrt(number1));
         return Math.sqrt(number1);
     }
 
@@ -20,17 +19,17 @@ public class Main {
         for (i = 1; i <= number1; i++) {
             fact = fact * i;
         }
-        Logger.info("Performing FACTORIAL of " + number1 + " result: " + fact);
+        Logger.info("FACTORIAL - Input:" + number1 + " - Output:" + fact);
         return fact;
     }
 
     public static double naturallog(double number1) {
-        Logger.info("Performing LOGRATHMIC of " + number1 + " result: " + Math.log(number1));
+        Logger.info("LOGRATHMIC  - Input:" + number1 + " - Output:" + Math.log(number1));
         return Math.log(number1);
     }
 
     public static double powerfun(double number1, double number2) {
-        Logger.info("Performing POWER FUNTION of " + number1 + "and" + number2 + " result: " + Math.pow(number1, number2));
+        Logger.info("POWER_FUNTION  - Input:" + number1 + "^" + number2 + " - Output:" + Math.pow(number1, number2));
         return Math.pow(number1, number2);
     }
 
