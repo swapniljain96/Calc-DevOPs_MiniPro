@@ -1,1 +1,2 @@
-localhost ansible_user=swapnil
+[local]
+172.16.129.56 ansible_user=swapnil
