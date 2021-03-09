@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('Git Pull') {
             steps {
-                git 'https://github.com/swapniljain96/calc-devops_minipro'
+//                 git 'https://github.com/swapniljain96/calc-devops_minipro'
+                git credentialsId: 'GitHub-Credentials', url: 'https://github.com/swapniljain96/calc-devops_minipro.git'
             }
         }
         stage('Maven Build') {

@@ -1,2 +1,4 @@
-08/Mar/2021:23:02:24 473 [Main.java] [INFO] Main Performing SQUARE ROOT of 2.0 result: 1.4142135623730951
-08/Mar/2021:23:03:20 674 [Main.java] [INFO] Main Performing FACTORIAL of 5.0 result: 120
+09/Mar/2021:19:18:55 122 [Main.java] [INFO] Main SQUARE_ROOT - Input:4.0 - Output:2.0
+09/Mar/2021:19:19:02 824 [Main.java] [INFO] Main LOGRATHMIC  - Input:2.0 - Output:0.6931471805599453
+09/Mar/2021:19:19:11 989 [Main.java] [INFO] Main POWER_FUNTION  - Input:2.0^7.0 - Output:128.0
+09/Mar/2021:19:21:59 147 [Main.java] [INFO] Main FACTORIAL - Input:5.0 - Output:120
