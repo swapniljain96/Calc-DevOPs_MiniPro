@@ -1,14 +1,11 @@
 pipeline {
-    environment{
-        imageName = ""
-    }
+    environment{    imageName = ""   }
     agent any
-
     stages {
         stage('Git Pull') {
             steps {
 //                 git 'https://github.com/swapniljain96/calc-devops_minipro'
-                git credentialsId: 'GitHub-Credentials', url: 'https://github.com/swapniljain96/calc-devops_minipro.git'
+                git 'https://github.com/swapniljain96/calc-devops_minipro.git'
             }
         }
         stage('Maven Build') {
@@ -29,8 +26,7 @@ pipeline {
             steps {
                 script{
                     docker.withRegistry('','Docker Hub Credentials'){
-                    imageName.push()
-                    }
+                    imageName.push()  }
                 }
             }
         }
