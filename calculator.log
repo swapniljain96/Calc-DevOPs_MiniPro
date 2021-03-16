@@ -1,4 +1,44 @@
-09/Mar/2021:19:18:55 122 [Main.java] [INFO] Main SQUARE_ROOT - Input:4.0 - Output:2.0
-09/Mar/2021:19:19:02 824 [Main.java] [INFO] Main LOGRATHMIC  - Input:2.0 - Output:0.6931471805599453
-09/Mar/2021:19:19:11 989 [Main.java] [INFO] Main POWER_FUNTION  - Input:2.0^7.0 - Output:128.0
-09/Mar/2021:19:21:59 147 [Main.java] [INFO] Main FACTORIAL - Input:5.0 - Output:120
+2021-03-16 15:14:44.156 [main] INFO  Main - Calculating square root  of given number:4.0
+2021-03-16 15:14:44.162 [main] INFO  Main - Resultant answer of power operations is : 2.0
+2021-03-16 15:14:51.461 [main] INFO  Main - Calculating factorial  of given number:5.0
+2021-03-16 15:14:51.462 [main] INFO  Main - Resultant answer of power operations is : 120
+2021-03-16 15:17:54.762 [main] INFO  Main - Calculating square root  of given number:2.0
+2021-03-16 15:17:54.770 [main] INFO  Main - Resultant answer of power operations is : 1.4142135623730951
+2021-03-16 15:19:29.309 [main] INFO  Main - Calculating square root  of given number:9.0
+2021-03-16 15:19:29.311 [main] INFO  Main - Resultant answer of power operations is : 3.0
+2021-03-16 15:19:39.530 [main] INFO  Main - Calculating factorial  of given number:2.0
+2021-03-16 15:19:39.531 [main] INFO  Main - Resultant answer of power operations is : 2
+2021-03-16 15:19:44.611 [main] INFO  Main - Calculating power function of given numbers:2.0,7.0
+2021-03-16 15:19:44.612 [main] INFO  Main - Resultant answer of power operation is : 128.0
+2021-03-16 15:21:11.024 [main] INFO  Main - Calculating square root  of given number:4.0
+2021-03-16 15:21:11.025 [main] INFO  Main - Resultant answer of power operations is : 2.0
+2021-03-16 15:21:11.026 [main] INFO  Main - Calculating square root  of given number:9.0
+2021-03-16 15:21:11.026 [main] INFO  Main - Resultant answer of power operations is : 3.0
+2021-03-16 15:21:11.026 [main] INFO  Main - Calculating natural log  of given number:10.0
+2021-03-16 15:21:11.026 [main] INFO  Main - Resultant answer of natural log operation is : 2.302585092994046
+2021-03-16 15:21:11.026 [main] INFO  Main - Calculating natural log  of given number:18.0
+2021-03-16 15:21:11.026 [main] INFO  Main - Resultant answer of natural log operation is : 2.8903717578961645
+2021-03-16 15:21:11.027 [main] INFO  Main - Calculating square root  of given number:16.0
+2021-03-16 15:21:11.027 [main] INFO  Main - Resultant answer of power operations is : 4.0
+2021-03-16 15:21:11.027 [main] INFO  Main - Calculating square root  of given number:10.0
+2021-03-16 15:21:11.027 [main] INFO  Main - Resultant answer of power operations is : 3.1622776601683795
+2021-03-16 15:21:11.027 [main] INFO  Main - Calculating power function of given numbers:3.0,2.0
+2021-03-16 15:21:11.027 [main] INFO  Main - Resultant answer of power operation is : 9.0
+2021-03-16 15:21:11.028 [main] INFO  Main - Calculating power function of given numbers:2.0,2.0
+2021-03-16 15:21:11.028 [main] INFO  Main - Resultant answer of power operation is : 4.0
+2021-03-16 15:21:11.028 [main] INFO  Main - Calculating natural log  of given number:10.0
+2021-03-16 15:21:11.028 [main] INFO  Main - Resultant answer of natural log operation is : 2.302585092994046
+2021-03-16 15:21:11.028 [main] INFO  Main - Calculating natural log  of given number:18.0
+2021-03-16 15:21:11.028 [main] INFO  Main - Resultant answer of natural log operation is : 2.8903717578961645
+2021-03-16 15:21:11.028 [main] INFO  Main - Calculating factorial  of given number:2.0
+2021-03-16 15:21:11.028 [main] INFO  Main - Resultant answer of power operations is : 2
+2021-03-16 15:21:11.028 [main] INFO  Main - Calculating factorial  of given number:3.0
+2021-03-16 15:21:11.029 [main] INFO  Main - Resultant answer of power operations is : 6
+2021-03-16 15:21:11.029 [main] INFO  Main - Calculating power function of given numbers:4.0,2.0
+2021-03-16 15:21:11.029 [main] INFO  Main - Resultant answer of power operation is : 16.0
+2021-03-16 15:21:11.029 [main] INFO  Main - Calculating power function of given numbers:3.0,3.0
+2021-03-16 15:21:11.029 [main] INFO  Main - Resultant answer of power operation is : 27.0
+2021-03-16 15:21:11.029 [main] INFO  Main - Calculating factorial  of given number:5.0
+2021-03-16 15:21:11.029 [main] INFO  Main - Resultant answer of power operations is : 120
+2021-03-16 15:21:11.029 [main] INFO  Main - Calculating factorial  of given number:3.0
+2021-03-16 15:21:11.029 [main] INFO  Main - Resultant answer of power operations is : 6
